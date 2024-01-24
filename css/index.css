@@ -1,0 +1,22 @@
+.page-d-accueil,
+.page-d-accueil * {
+    box-sizing: border-box;
+}
+.page-d-accueil {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 371px;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+.text {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+}
