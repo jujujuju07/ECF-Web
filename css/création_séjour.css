@@ -61,7 +61,7 @@ body {
     width: 323px;
     height: 23px;
 }
-.frame-date2 {
+.input-date {
     border-radius: 15px;
     border-style: solid;
     border-color: #000000;
@@ -71,6 +71,7 @@ body {
     height: 72px;
     position: relative;
     overflow: hidden;
+    font-size: 25px;
 }
 .frame-motif-du-sejour {
     display: flex;
@@ -81,7 +82,7 @@ body {
     flex-shrink: 0;
     position: relative;
 }
-.motif-du-s-jour {
+.motif-du-sejour {
     color: #000000;
     text-align: left;
     font-family: "Inter-Regular", sans-serif;
@@ -91,7 +92,7 @@ body {
     width: 323px;
     height: 23px;
 }
-.frame-motif-du-s-jour2 {
+.input-motif-du-sejour {
     border-radius: 15px;
     border-style: solid;
     border-color: #000000;
@@ -101,6 +102,7 @@ body {
     height: 72px;
     position: relative;
     overflow: hidden;
+    font-size: 25px;
 }
 .frame-specialit-necessaire-medecin {
     display: flex;
@@ -130,7 +132,7 @@ body {
     width: 323px;
     height: 29px;
 }
-.frame-specialit-necessaire2 {
+.input-specialit-necessaire {
     border-radius: 15px;
     border-style: solid;
     border-color: #000000;
@@ -140,6 +142,7 @@ body {
     height: 72px;
     position: relative;
     overflow: hidden;
+    font-size: 25px;
 }
 .frame-medecin {
     display: flex;
@@ -160,7 +163,7 @@ body {
     width: 323px;
     height: 29px;
 }
-.frame-medecin2 {
+.input-medecin {
     border-radius: 15px;
     border-style: solid;
     border-color: #000000;
@@ -170,8 +173,9 @@ body {
     height: 72px;
     position: relative;
     overflow: hidden;
+    font-size: 25px;
 }
-.frame-button {
+.input-confirmation {
     border-radius: 15px;
     border-style: solid;
     border-color: #000000;
@@ -185,12 +189,7 @@ body {
     flex-shrink: 0;
     position: relative;
     overflow: hidden;
-}
-.confirmation {
-    color: #000000;
-    text-align: left;
     font-family: "Inter-Regular", sans-serif;
     font-size: 32px;
     font-weight: 400;
-    position: relative;
 }
