@@ -1,3 +1,6 @@
+body {
+    margin: auto;
+}
 .frame-header,
 .frame-header * {
     box-sizing: border-box;
