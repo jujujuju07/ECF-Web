@@ -7,26 +7,22 @@
 </head>
 <body>
 <?php include("header.php") ?>
-<div class="connexion-compte-utilisateur">
+<form method="post" class="connexion-compte-utilisateur">
     <div class="frame-info">
         <div class="group-e-mail">
-            <div class="frame-e-mail"></div>
-            <div class="e-mail">E-Mail</div>
+            <input type="email" class="frame-e-mail" id="e-mail" name="e-mail">
+            <label class="e-mail" for="e-mail">E-Mail</label>
         </div>
         <div class="group-mot-de-passe">
-            <div class="frame-mot-de-passe"></div>
-            <div class="mot-de-passe">Mot de Passe</div>
+            <input type="password" class="frame-mot-de-passe" id="mot-de-passe" name="mot-de-passe">
+            <label class="mot-de-passe" for="mot-de-passe">Mot de Passe</label>
         </div>
     </div>
     <div class="frame-button">
-        <div class="frame-se-connecter">
-            <div class="se-connecter">Se Connecter</div>
-        </div>
-        <div class="frame-s-inscrire">
-            <div class="s-inscrire">S’inscrire</div>
-        </div>
+        <input type="submit" class="frame-se-connecter" value="Se Connecter">
+        <input type="submit" class="frame-s-inscrire" value="S’inscrire">
     </div>
-</div>
+</form>
 
 </body>
 </html>
