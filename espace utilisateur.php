@@ -11,25 +11,25 @@
     <div class="frame-titre">
         <div class="historique">Historique</div>
     </div>
-    <div class="frame-filtre">
-        <div class="tout">Tout</div>
-        <div class="effectu">effectué</div>
-        <div class="en-cours">en cours</div>
-        <div class="venir">à venir</div>
-    </div>
+    <form method="post" class="frame-filtre">
+        <input type="submit" class="tout" value="Tout" name="tout">
+        <input type="submit" class="effectuer" value="effectué" name="effectuer">
+        <input type="submit" class="en-cours" value="en cours" name="en cours">
+        <input type="submit" class="venir" value="à venir" name="venir">
+    </form>
     <div class="frame-tableau">
         <div class="frame-info">
-            <div class="motif-du-s-jour">Motif du Séjour</div>
+            <div class="motif-du-sejour">Motif du Séjour</div>
             <div class="date">Date</div>
-            <div class="m-decin">Médecin</div>
-            <div class="sp-cialit">Spécialité</div>
+            <div class="medecin">Médecin</div>
+            <div class="specialit">Spécialité</div>
             <div class="statue">Statue</div>
         </div>
         <div class="frame-17">
-            <div class="motif-du-s-jour2">Motif du Séjour</div>
+            <div class="motif-du-sejour2">Motif du Séjour</div>
             <div class="date2">Date</div>
-            <div class="m-decin2">Médecin</div>
-            <div class="sp-cialit2">Spécialité</div>
+            <div class="medecin2">Médecin</div>
+            <div class="specialit2">Spécialité</div>
             <div class="statue2">Statue</div>
         </div>
     </div>

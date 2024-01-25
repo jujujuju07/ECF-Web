@@ -63,14 +63,20 @@ body {
     font-size: 24px;
     font-weight: 400;
     position: relative;
+    background-color: white;
+    border-color: white;
+    border-width: 0;
 }
-.effectu {
+.effectuer {
     color: #000000;
     text-align: left;
     font-family: "Inter-Regular", sans-serif;
     font-size: 24px;
     font-weight: 400;
     position: relative;
+    background-color: white;
+    border-color: white;
+    border-width: 0;
 }
 .en-cours {
     color: #000000;
@@ -79,6 +85,9 @@ body {
     font-size: 24px;
     font-weight: 400;
     position: relative;
+    background-color: white;
+    border-color: white;
+    border-width: 0;
 }
 .venir {
     color: #000000;
@@ -87,6 +96,9 @@ body {
     font-size: 24px;
     font-weight: 400;
     position: relative;
+    background-color: white;
+    border-color: white;
+    border-width: 0;
 }
 .frame-tableau {
     border-style: solid;
@@ -115,7 +127,7 @@ body {
     position: relative;
     overflow: hidden;
 }
-.motif-du-s-jour {
+.motif-du-sejour {
     color: #000000;
     text-align: left;
     font-family: "Inter-Regular", sans-serif;
@@ -131,7 +143,7 @@ body {
     font-weight: 400;
     position: relative;
 }
-.m-decin {
+.medecin {
     color: #000000;
     text-align: left;
     font-family: "Inter-Regular", sans-serif;
@@ -139,7 +151,7 @@ body {
     font-weight: 400;
     position: relative;
 }
-.sp-cialit {
+.specialit {
     color: #000000;
     text-align: left;
     font-family: "Inter-Regular", sans-serif;
@@ -162,7 +174,7 @@ body {
     position: relative;
     overflow: hidden;
 }
-.motif-du-s-jour2 {
+.motif-du-sejour2 {
     color: #000000;
     text-align: left;
     font-family: "Inter-Regular", sans-serif;
@@ -182,7 +194,7 @@ body {
     left: 497px;
     top: 55px;
 }
-.m-decin2 {
+.medecin2 {
     color: #000000;
     text-align: left;
     font-family: "Inter-Regular", sans-serif;
@@ -192,7 +204,7 @@ body {
     left: 819px;
     top: 55px;
 }
-.sp-cialit2 {
+.specialit2 {
     color: #000000;
     text-align: left;
     font-family: "Inter-Regular", sans-serif;
