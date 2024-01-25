@@ -1,0 +1,196 @@
+body {
+    gap: 145px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.creation-d-un-sejour,
+.creation-d-un-sejour * {
+    box-sizing: border-box;
+}
+.creation-d-un-sejour {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 145px;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+.frame-info {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    padding: 87px 111px 87px 111px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+.frame-date-motif-du-sejour {
+    display: flex;
+    flex-direction: row;
+    gap: 163px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+.frame-date {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+.date {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    width: 323px;
+    height: 23px;
+}
+.frame-date2 {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    flex-shrink: 0;
+    width: 323px;
+    height: 72px;
+    position: relative;
+    overflow: hidden;
+}
+.frame-motif-du-sejour {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+.motif-du-s-jour {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    width: 323px;
+    height: 23px;
+}
+.frame-motif-du-s-jour2 {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    flex-shrink: 0;
+    width: 323px;
+    height: 72px;
+    position: relative;
+    overflow: hidden;
+}
+.frame-specialit-necessaire-medecin {
+    display: flex;
+    flex-direction: row;
+    gap: 164px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+.frame-specialit-necessaire {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+.specialit-necessaire {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    width: 323px;
+    height: 29px;
+}
+.frame-specialit-necessaire2 {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    flex-shrink: 0;
+    width: 323px;
+    height: 72px;
+    position: relative;
+    overflow: hidden;
+}
+.frame-medecin {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+.medecin {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    width: 323px;
+    height: 29px;
+}
+.frame-medecin2 {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    flex-shrink: 0;
+    width: 323px;
+    height: 72px;
+    position: relative;
+    overflow: hidden;
+}
+.frame-button {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    padding: 20px 370px 20px 370px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+.confirmation {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    position: relative;
+}
