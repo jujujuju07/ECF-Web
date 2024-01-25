@@ -1,0 +1,39 @@
+body {
+    margin: auto;
+}
+.property-1-web-connecter,
+.property-1-web-connecter * {
+    box-sizing: border-box;
+}
+.property-1-web-connecter {
+    background: var(--bleu, #3936df);
+    padding: 28px 25px 28px 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+.frame {
+    flex-shrink: 0;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.soigne-moi {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    position: relative;
+}
+.group-icon {
+    flex-shrink: 0;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    overflow: visible;
+}
