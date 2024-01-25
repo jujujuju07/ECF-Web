@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/espace_utilisateur.css">
 </head>
 <body>
-<?php /*include("header.php") */?>
+<?php include("header_connecter.php") ?>
 <div class="espace-utilisateur">
     <div class="frame-titre">
         <div class="historique">Historique</div>
