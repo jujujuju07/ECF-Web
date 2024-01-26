@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Gestion des Plannings Des Médecin</title>
@@ -11,36 +11,36 @@
 <div class="gestions-des-plannings-des-medecins">
     <div class="frame-choisir-medecin">
         <div class="frame-choisir-medecin2">
-            <div class="medecin">Médecin</div>
-            <div class="frame-choisir"></div>
+            <label class="medecin" for="medecin">Médecin</label>
+            <select class="select-medecin" id="medecin">
+                <option></option>
+            </select>
         </div>
-        <div class="frame-ajouter-medecin">
-            <div class="frame-ajouter-medecin2">
-                <div class="medecin">Médecin</div>
-                <div class="frame-ajouter"></div>
+        <form method="post" class="form-ajouter-medecin">
+            <div class="frame-ajouter-medecin">
+                <label class="medecin" for="ajouter-medecin">Médecin</label>
+                <input type="text" class="frame-ajouter" id="ajouter-medecin">
             </div>
-            <div class="frame-button">
-                <div class="ajouter-medecin">Ajouter Médecin</div>
-            </div>
-        </div>
+            <input type="submit" class="input-button" value="Ajouter Médecin" name="ajouter-medecin">
+        </form>
     </div>
     <div class="frame-tableau">
         <div class="frame-info-medecin">
             <div class="frame-nom">
-                <div class="nom">Nom</div>
-                <div class="frame-nom2"></div>
+                <label for="nom" class="nom">Nom</label>
+                <input type="text" disabled class="input-nom" id="nom">
             </div>
             <div class="frame-prenom">
-                <div class="prenom">Prenom</div>
-                <div class="frame-prenom2"></div>
+                <label for="prenom" class="prenom">Prenom</label>
+                <input type="text" disabled class="input-prenom" id="prenom">
             </div>
             <div class="frame-specialite">
-                <div class="specialite">Specialite</div>
-                <div class="frame-specialite2"></div>
+                <label for="specialite" class="specialite">Specialite</label>
+                <input type="text" disabled class="input-specialite" id="specialite">
             </div>
             <div class="frame-matricule">
-                <div class="matricule">Matricule</div>
-                <div class="frame-matricule2"></div>
+                <label for="matricule" class="matricule">Matricule</label>
+                <input type="text" disabled class="input-matricule" id="matricule">
             </div>
         </div>
         <div class="frame-tableau2">

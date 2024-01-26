@@ -4,11 +4,11 @@ body{
     display: flex;
     flex-direction: column;
 }
-.cr-ation-d-un-compte-utilisateur,
-.cr-ation-d-un-compte-utilisateur * {
+.creation-d-un-compte-utilisateur,
+.creation-d-un-compte-utilisateur * {
     box-sizing: border-box;
 }
-.cr-ation-d-un-compte-utilisateur {
+.creation-d-un-compte-utilisateur {
     background: #ffffff;
     display: flex;
     flex-direction: column;
@@ -55,6 +55,7 @@ body{
     left: 597px;
     top: 110px;
     overflow: hidden;
+    font-size: 25px;
 }
 .mot-de-passe {
     color: #000000;
@@ -84,6 +85,7 @@ body{
     left: 111px;
     top: 110px;
     overflow: hidden;
+    font-size: 25px;
 }
 .e-mail {
     color: #000000;
@@ -97,18 +99,18 @@ body{
     width: 323px;
     height: 23px;
 }
-.group-nom-pr-nom {
+.group-nom-prenom {
     flex-shrink: 0;
     width: 809px;
     height: 95px;
     position: static;
 }
-.group-pr-nom {
+.group-prenom {
     width: 323px;
     height: 95px;
     position: static;
 }
-.frame-pr-nom {
+.frame-prenom {
     border-radius: 15px;
     border-style: solid;
     border-color: #000000;
@@ -119,8 +121,9 @@ body{
     left: 597px;
     top: 265px;
     overflow: hidden;
+    font-size: 25px;
 }
-.pr-nom {
+.prenom {
     color: #000000;
     text-align: left;
     font-family: "Inter-Regular", sans-serif;
@@ -148,6 +151,7 @@ body{
     left: 111px;
     top: 265px;
     overflow: hidden;
+    font-size: 25px;
 }
 .nom {
     color: #000000;
@@ -178,6 +182,7 @@ body{
     left: 354px;
     top: 420px;
     overflow: hidden;
+    font-size: 25px;
 }
 .adresse-postale {
     color: #000000;
@@ -205,12 +210,9 @@ body{
     flex-shrink: 0;
     position: relative;
     overflow: hidden;
-}
-.s-inscrire {
     color: #000000;
     text-align: left;
     font-family: "Inter-Regular", sans-serif;
     font-size: 32px;
     font-weight: 400;
-    position: relative;
 }

@@ -51,7 +51,7 @@ body{
     width: 255px;
     height: 15px;
 }
-.frame-choisir {
+.select-medecin {
     border-radius: 15px;
     border-style: solid;
     border-color: #000000;
@@ -68,7 +68,7 @@ body{
     position: relative;
     overflow: hidden;
 }
-.frame-ajouter-medecin {
+.form-ajouter-medecin {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -77,7 +77,7 @@ body{
     flex-shrink: 0;
     position: relative;
 }
-.frame-ajouter-medecin2 {
+.frame-ajouter-medecin {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -96,7 +96,7 @@ body{
     position: relative;
     overflow: hidden;
 }
-.frame-button {
+.input-button {
     border-radius: 15px;
     border-style: solid;
     border-color: #000000;
@@ -110,14 +110,9 @@ body{
     flex-shrink: 0;
     position: relative;
     overflow: hidden;
-}
-.ajouter-medecin {
-    color: #000000;
-    text-align: left;
     font-family: "Inter-Regular", sans-serif;
     font-size: 12px;
     font-weight: 400;
-    position: relative;
 }
 .frame-tableau {
     border-radius: 15px;
@@ -167,7 +162,7 @@ body{
     width: 223px;
     height: 15px;
 }
-.frame-nom2 {
+.input-nom {
     border-radius: 15px;
     border-style: solid;
     border-color: #000000;
@@ -196,7 +191,7 @@ body{
     width: 223px;
     height: 15px;
 }
-.frame-prenom2 {
+.input-prenom {
     border-radius: 15px;
     border-style: solid;
     border-color: #000000;
@@ -225,7 +220,7 @@ body{
     width: 223px;
     height: 15px;
 }
-.frame-specialite2 {
+.input-specialite {
     border-radius: 15px;
     border-style: solid;
     border-color: #000000;
@@ -254,7 +249,7 @@ body{
     width: 223px;
     height: 15px;
 }
-.frame-matricule2 {
+.input-matricule {
     border-radius: 15px;
     border-style: solid;
     border-color: #000000;

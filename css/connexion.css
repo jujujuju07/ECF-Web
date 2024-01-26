@@ -50,6 +50,7 @@ body{
     left: 111px;
     top: 110px;
     overflow: hidden;
+    font-size: 25px;
 }
 .e-mail {
     color: #000000;
@@ -80,6 +81,7 @@ body{
     left: 111px;
     top: 265px;
     overflow: hidden;
+    font-size: 25px;
 }
 .mot-de-passe {
     color: #000000;
@@ -116,14 +118,9 @@ body{
     flex-shrink: 0;
     position: relative;
     overflow: hidden;
-}
-.se-connecter {
-    color: #000000;
-    text-align: left;
     font-family: "Inter-Regular", sans-serif;
     font-size: 32px;
     font-weight: 400;
-    position: relative;
 }
 .frame-s-inscrire {
     border-radius: 15px;
@@ -139,12 +136,7 @@ body{
     flex-shrink: 0;
     position: relative;
     overflow: hidden;
-}
-.s-inscrire {
-    color: #000000;
-    text-align: left;
     font-family: "Inter-Regular", sans-serif;
     font-size: 32px;
     font-weight: 400;
-    position: relative;
 }
