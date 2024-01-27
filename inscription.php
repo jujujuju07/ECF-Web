@@ -6,6 +6,62 @@
     <link rel="stylesheet" href="css/inscription.css">
 </head>
 <body>
+<?php
+
+if (isset($_POST['s\'inscrire'])){
+    // Récupérez les données du formulaire
+    $email = $_POST['e-mail'];
+    $nom = $_POST['nom'];
+    $prenom = $_POST['prenom'];
+    $adresse = $_POST['adresse-postale'];
+    $password = $_POST['mot-de-passe'];
+    $pass = true;
+
+    if (empty($nom)){
+        echo "Erreur : le nom ne peut pas être vide. ";
+        $pass = false;
+    }
+    else if (empty($prenom)) {
+        echo "Erreur : le prénom ne peut pas être vide. ";
+        $pass = false;
+    }
+    else if (empty($email)) {
+        echo "Erreur : le mail ne peut pas être vide. ";
+        $pass = false;
+    }
+    else if (empty($adresse)) {
+        echo "Erreur : l'adresse ne peut pas être vide. ";
+        $pass = false;
+    }
+    else if (empty($password)) {
+        echo "Erreur : le mot de passe ne peut pas être vide. ";
+        $pass = false;
+    }
+
+    if ($pass){
+        try {
+            include ("configBDD.php");
+            $database = new configBDD();
+            $database->connexion();
+            $pass = $database->inscription($email,$nom,$prenom,$adresse,$password);
+            if ($pass){
+                header('Location: inscription.php');
+            } else {
+                echo "utilisateur existe déja";
+            }
+
+
+        } catch (PDOException $e) {
+            // Gérez les erreurs de connexion
+            echo "Erreur : " . $e->getMessage();
+        }
+    }
+
+}
+
+
+?>
+
 <?php include("header.php") ?>
 
 <form class="creation-d-un-compte-utilisateur" method="post">
@@ -35,7 +91,7 @@
             <label class="adresse-postale" for="adresse-postale">Adresse postale</label>
         </div>
     </div>
-    <input type="submit" class="frame-button" value="S’inscrire">
+    <input type="submit" class="frame-button" value="S’inscrire" name="s'inscrire">
 </form>
 
 </body>
