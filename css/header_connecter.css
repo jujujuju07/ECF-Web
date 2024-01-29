@@ -22,6 +22,10 @@ body {
     position: relative;
     overflow: hidden;
 }
+.div-button{
+    display: flex;
+    gap: 15px;
+}
 .soigne-moi {
     color: #000000;
     text-align: left;
