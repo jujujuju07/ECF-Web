@@ -44,5 +44,24 @@ class configBDD
 
     }
 
+    function conexion($email, $password)
+    {
+        session_start();
+        $conn = $this->conn;
+
+        $stmt = $conn->prepare("SELECT * FROM user WHERE email = ? AND password = md5(?)");
+        $stmt->execute(array($email,$password));
+        $utilisateur = $stmt->fetch();
+        if ($utilisateur){
+            $_SESSION["id_user"] = $utilisateur["id_user"];
+            return 1;
+        }else{
+            return 0;
+        }
+
+
+
+    }
+
 
 }
