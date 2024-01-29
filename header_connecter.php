@@ -9,7 +9,9 @@
 <div class="property-1-web-connecter">
     <div class="frame"></div>
     <div class="soigne-moi">SoigneMoi</div>
-    <img src="image/user.svg" id="button_user" alt="user">
-    <img src="image/logout.svg" id="button_logout" alt="deconexion" onclick="window.location.href = 'index.php' ">
+    <div class="div-button">
+        <img src="image/user.svg" id="button_user" alt="user">
+        <img src="image/logout.svg" id="button_logout" alt="deconexion" onclick="window.location.href = 'index.php' ">
+    </div>
 </div></body>
 </html>
