@@ -63,5 +63,55 @@ class configBDD
 
     }
 
+    function utilisateur_sejour($filtre)
+    {
+        session_start();
+        $id_user = $_SESSION["id_user"];
+        if (!$id_user){
+            header('Location: espace_utilisateur.php');
+        }
+        $conn = $this->conn;
+
+        switch ($filtre){
+            case "tout":
+                $stmt = $conn->prepare("SELECT date,motif,specialite,medecin FROM sejour WHERE patient = ?");
+                $stmt->execute(array($id_user));
+                break;
+            case "effectue":
+                $dateeff = new DateTime();
+                $dateeff->add(DateInterval::createFromDateString('-2 hours'));
+                $stmt = $conn->prepare("SELECT date,motif,specialite,medecin FROM sejour WHERE patient = ? and date <= ?");
+                $stmt->execute(array($id_user,$dateeff->format('y-m-j H:i:s')));
+                break;
+            case "en cours":
+                $dateeff = new DateTime();
+                $dateeffe = new DateTime();
+                $dateeffe->add(DateInterval::createFromDateString('-2 hours'));
+                $stmt = $conn->prepare("SELECT date,motif,specialite,medecin FROM sejour WHERE patient = ? and date >= ? and date <= ?");
+                $stmt->execute(array($id_user,$dateeffe->format('Y-m-j H:i:s'),$dateeff->format('Y-m-j H:i:s')));
+                break;
+            case "a venir":
+                $dateeff = new DateTime();
+                $stmt = $conn->prepare("SELECT date,motif,specialite,medecin FROM sejour WHERE patient = ? and date >= ?");
+                $stmt->execute(array($id_user,$dateeff->format('y-m-j H:i:s')));
+                break;
+        }
+
+        return $stmt;
+
+    }
+
+    function medecin($id)
+    {
+        $conn = $this->conn;
+
+        $stmt = $conn->prepare("SELECT nom FROM medecin WHERE id = ?");
+        $stmt->execute(array($id));
+        return $stmt->fetch();
+
+
+    }
+
+
 
 }
