@@ -51,13 +51,6 @@ if (isset($_POST['S\'inscrire'])) {
     header('Location: inscription.php');
 }
 
-if (!$_POST['e-mail']){
-    $_POST['e-mail'] = "";
-}
-
-if (!$_POST['mot-de-passe']){
-    $_POST['mot-de-passe'] = "";
-}
 
 ?>
 
@@ -65,11 +58,11 @@ if (!$_POST['mot-de-passe']){
 <form method="post" class="connexion-compte-utilisateur">
     <div class="frame-info">
         <div class="group-e-mail">
-            <input type="email" class="frame-e-mail" id="e-mail" name="e-mail" value=<?php echo $_POST['e-mail'];?>>
+            <input type="email" class="frame-e-mail" id="e-mail" name="e-mail" value=<?php if (!empty($_POST['e-mail'])){echo $_POST['e-mail'];}?>>
             <label class="e-mail" for="e-mail">E-Mail</label>
         </div>
         <div class="group-mot-de-passe">
-            <input type="password" class="frame-mot-de-passe" id="mot-de-passe" name="mot-de-passe" value=<?php echo $_POST['mot-de-passe'];?>>
+            <input type="password" class="frame-mot-de-passe" id="mot-de-passe" name="mot-de-passe" value=<?php if (!empty($_POST['mot-de-passe'])){echo $_POST['mot-de-passe'];}?>>
             <label class="mot-de-passe" for="mot-de-passe">Mot de Passe</label>
         </div>
     </div>
@@ -82,6 +75,17 @@ if (!$_POST['mot-de-passe']){
 <script>
     document.getElementById("e-mail").value =
 </script>
+<?php
+if (!empty($_POST['e-mail'])){
+    $_POST['e-mail'] = "";
+}
 
+if (!empty($_POST['mot-de-passe'])){
+    $_POST['mot-de-passe'] = "";
+}
+
+
+
+?>
 </body>
 </html>
