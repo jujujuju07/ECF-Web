@@ -100,127 +100,63 @@ body {
     border-color: white;
     border-width: 0;
 }
-.frame-tableau {
+.table-tableau{
     border-style: solid;
     border-color: #000000;
     border-width: 4px;
     display: flex;
+    width: 80%;
     flex-direction: column;
-    gap: 0px;
     align-items: center;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    position: relative;
-    overflow: hidden;
+    justify-content: center;
+
+
 }
-.frame-info {
-    border-style: solid;
-    border-color: #000000;
-    border-width: 0px 0px 4px 0px;
-    padding: 12px 52px 12px 52px;
+.titre-tab{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.tr-titre{
+    width: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     align-self: stretch;
-    flex-shrink: 0;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 24px;
+
+}
+.info-tab{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    overflow: hidden;
+
 }
-.motif-du-sejour {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
+.tr-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
-}
-.date {
-    color: #000000;
-    text-align: left;
+    align-self: stretch;
     font-family: "Inter-Regular", sans-serif;
     font-size: 24px;
-    font-weight: 400;
-    position: relative;
+
 }
-.medecin {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: relative;
-}
-.specialit {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: relative;
-}
-.statue {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: relative;
-}
-.frame-17 {
-    flex-shrink: 0;
-    width: 1688px;
-    height: 139px;
-    position: relative;
-    overflow: hidden;
-}
-.motif-du-sejour2 {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: absolute;
-    left: 55px;
-    top: 55px;
-}
-.date2 {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: absolute;
-    left: 497px;
-    top: 55px;
-}
-.medecin2 {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: absolute;
-    left: 819px;
-    top: 55px;
-}
-.specialit2 {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: absolute;
-    left: 1185px;
-    top: 55px;
-}
-.statue2 {
-    color: #000000;
-    text-align: left;
-    font-family: "Inter-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: absolute;
-    left: 1564px;
-    top: 55px;
+
+
+.tableau{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
 }
