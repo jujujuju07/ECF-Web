@@ -45,7 +45,7 @@ body {
 .frame-date {
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 0;
     align-items: flex-start;
     justify-content: flex-start;
     flex-shrink: 0;
@@ -76,7 +76,7 @@ body {
 .frame-motif-du-sejour {
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 0;
     align-items: flex-start;
     justify-content: flex-start;
     flex-shrink: 0;
@@ -116,7 +116,7 @@ body {
 .frame-specialit-necessaire {
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 0;
     align-items: flex-start;
     justify-content: flex-start;
     flex-shrink: 0;
@@ -147,7 +147,7 @@ body {
 .frame-medecin {
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 0;
     align-items: flex-start;
     justify-content: flex-start;
     flex-shrink: 0;
