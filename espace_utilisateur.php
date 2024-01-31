@@ -8,6 +8,9 @@
 <body>
 <?php include("header_connecter.php") ?>
 <div class="espace-utilisateur">
+    <div class="ajouter_sejour" onclick="window.location.href = 'création_séjour.php'">
+        <div class="cree-un-sejour">Crée un séjour</div>
+    </div>
     <div class="frame-titre">
         <div class="historique">Historique</div>
     </div>
