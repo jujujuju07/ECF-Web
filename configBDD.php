@@ -112,6 +112,37 @@ class configBDD
 
     }
 
+    function liste_medecin()
+    {
+        $conn = $this->conn;
+
+        return $conn->query("SELECT nom,prenom FROM medecin");
+    }
+
+    function medecin_id($nomP)
+    {
+        $conn = $this->conn;
+        $TabNom = explode(" ", $nomP);
+
+
+        $stmt = $conn->prepare("SELECT id FROM medecin WHERE nom = ? AND prenom = ?");
+        $stmt->execute(array($TabNom[0],$TabNom[1]));
+        return $stmt->fetch();
+
+    }
+
+    function sejour($date,$motif,$specialite,$medecin)
+    {
+        $id_user = $_SESSION["id_user"];
+        $conn = $this->conn;
+
+
+
+        $stmt = $conn->prepare("INSERT INTO sejour (date,motif,specialite,medecin,patient) VALUES (?,?,?,?,?)");
+        return $stmt->execute(array($date,$motif,$specialite,$medecin,$id_user));
+
+    }
+
 
 
 }
