@@ -18,6 +18,29 @@ body {
     position: relative;
     overflow: hidden;
 }
+.ajouter_sejour {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    padding: 9px 63px 9px 63px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+.cree-un-sejour {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+}
 .frame-titre {
     border-radius: 15px;
     border-style: solid;
