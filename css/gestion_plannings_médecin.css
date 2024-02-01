@@ -33,6 +33,15 @@ body{
     position: relative;
     overflow: hidden;
 }
+.choisir-medecin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    position: relative;
+    gap: 20px;
+}
 .frame-choisir-medecin2 {
     display: flex;
     flex-direction: column;
@@ -68,6 +77,12 @@ body{
     position: relative;
     overflow: hidden;
 }
+.image-valider {
+    width: 50px;
+    background-color: white;
+    border-color: white;
+    border-width: 0;
+}
 .form-ajouter-medecin {
     display: flex;
     flex-direction: row;
@@ -76,6 +91,7 @@ body{
     justify-content: flex-start;
     flex-shrink: 0;
     position: relative;
+
 }
 .frame-ajouter-medecin {
     display: flex;
@@ -125,7 +141,7 @@ body{
     align-items: center;
     justify-content: space-between;
     flex-shrink: 0;
-    height: 473px;
+    gap: 20px;
     position: relative;
     overflow: hidden;
 }
@@ -259,6 +275,32 @@ body{
     height: 33px;
     position: relative;
     overflow: hidden;
+}
+.ajouter-medecin {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    padding: 8px 93px 8px 93px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+.confirmation {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    background-color: white;
+    border-color: white;
+    border-width: 0;
 }
 .frame-tableau2 {
     border-style: solid;

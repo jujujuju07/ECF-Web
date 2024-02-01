@@ -143,6 +143,37 @@ class configBDD
 
     }
 
+    function addMedecin($nom,$prenom,$specialite,$matricule)
+    {
+        $conn = $this->conn;
+
+        $stmt = $conn->prepar("SELECT id FROM medecin WHERE matricule = ?");
+        $pass = $stmt->execute(array($matricule));
+        if ($pass){
+            $stmt = $conn->prepare("INSERT INTO medecin (nom,prenom,specialite,matricule) VALUES (?,?,?,?)");
+            $stmt->bindParam(1,$nom);
+            $stmt->bindParam(2,$prenom);
+            $stmt->bindParam(3,$specialite);
+            $stmt->bindParam(4,$matricule);
+            return $stmt->execute();
+        }else{
+            return 0;
+        }
+
+
+    }
+
+    function info_medecin($nomP)
+    {
+        $conn = $this->conn;
+        $TabNom = explode(" . ", $nomP);
+
+        $stmt = $conn->prepare("SELECT nom,prenom,specialite,matricule FROM medecin WHERE nom = ? AND prenom = ?");
+        $stmt->execute(array($TabNom[0],$TabNom[1]));
+        return $stmt->fetch();
+
+    }
+
 
 
 }
