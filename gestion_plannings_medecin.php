@@ -32,7 +32,7 @@
 
                     </select>
                 </div>
-                <button type="submit" class="image-valider" name="choisi-medecin" ><img class="image-valider" src="image/valider.png"></button>
+                <button type="submit" class="image-valider" name="choisi-medecin" ><img class="image-valider" src="image/valider.png" alt="Valider"></button>
             </form>
 
             <form method="post" class="form-ajouter-medecin">
