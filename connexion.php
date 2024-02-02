@@ -33,12 +33,17 @@ if (isset($_POST['Se_Connecter'])) {
             $database = new configBDD();
             $database->connexion();
             $pass = $database->conexion($email, $password);
-            if ($pass){
-                header('Location: espace_utilisateur.php');
-            } else {
-                echo "adresse mail ou mot de passe incorrect";
+            switch ($pass){
+                case 0:
+                    echo "adresse mail ou mot de passe incorrect";
+                    break;
+                case 1:
+                    header('Location: espace_utilisateur.php');
+                    break;
+                case 2:
+                    header('Location: gestion_plannings_medecin.php');
+                    break;
             }
-
 
         } catch (PDOException $e) {
             // Gérez les erreurs de connexion

@@ -49,12 +49,16 @@ class configBDD
         session_start();
         $conn = $this->conn;
 
-        $stmt = $conn->prepare("SELECT * FROM user WHERE email = ? AND password = md5(?)");
+        $stmt = $conn->prepare("SELECT id,id_user FROM user WHERE email = ? AND password = md5(?)");
         $stmt->execute(array($email,$password));
         $utilisateur = $stmt->fetch();
         if ($utilisateur){
-            $_SESSION["id_user"] = $utilisateur["id_user"];
-            return 1;
+            if ($utilisateur['id_user'] == null){
+                return 2;
+            }else{
+                $_SESSION["id_user"] = $utilisateur["id_user"];
+                return 1;
+            }
         }else{
             return 0;
         }
