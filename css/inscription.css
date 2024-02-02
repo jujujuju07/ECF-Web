@@ -1,0 +1,218 @@
+body{
+    gap: 110px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.creation-d-un-compte-utilisateur,
+.creation-d-un-compte-utilisateur * {
+    box-sizing: border-box;
+}
+.creation-d-un-compte-utilisateur {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+.frame-info {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    padding: 87px 111px 87px 111px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+.group-e-mail-mot-de-passe {
+    flex-shrink: 0;
+    width: 809px;
+    height: 95px;
+    position: static;
+}
+.group-mot-de-passe {
+    width: 323px;
+    height: 95px;
+    position: static;
+}
+.frame-mot-de-passe {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    width: 323px;
+    height: 72px;
+    position: absolute;
+    left: 597px;
+    top: 110px;
+    overflow: hidden;
+    font-size: 25px;
+}
+.mot-de-passe {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    left: 597px;
+    top: 87px;
+    width: 323px;
+    height: 23px;
+}
+.group-e-mail {
+    width: 323px;
+    height: 95px;
+    position: static;
+}
+.frame-e-mail {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    width: 323px;
+    height: 72px;
+    position: absolute;
+    left: 111px;
+    top: 110px;
+    overflow: hidden;
+    font-size: 25px;
+}
+.e-mail {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    left: 111px;
+    top: 87px;
+    width: 323px;
+    height: 23px;
+}
+.group-nom-prenom {
+    flex-shrink: 0;
+    width: 809px;
+    height: 95px;
+    position: static;
+}
+.group-prenom {
+    width: 323px;
+    height: 95px;
+    position: static;
+}
+.frame-prenom {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    width: 323px;
+    height: 72px;
+    position: absolute;
+    left: 597px;
+    top: 265px;
+    overflow: hidden;
+    font-size: 25px;
+}
+.prenom {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    left: 597px;
+    top: 242px;
+    width: 323px;
+    height: 23px;
+}
+.group-nom {
+    width: 323px;
+    height: 95px;
+    position: static;
+}
+.frame-nom {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    width: 323px;
+    height: 72px;
+    position: absolute;
+    left: 111px;
+    top: 265px;
+    overflow: hidden;
+    font-size: 25px;
+}
+.nom {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    left: 111px;
+    top: 242px;
+    width: 323px;
+    height: 23px;
+}
+.group-adresse-postale {
+    flex-shrink: 0;
+    width: 323px;
+    height: 95px;
+    position: static;
+}
+.frame-adresse-postale {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    width: 323px;
+    height: 72px;
+    position: absolute;
+    left: 354px;
+    top: 420px;
+    overflow: hidden;
+    font-size: 25px;
+}
+.adresse-postale {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    left: 354px;
+    top: 397px;
+    width: 323px;
+    height: 23px;
+}
+.frame-button {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
+    padding: 20px 370px 20px 370px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
