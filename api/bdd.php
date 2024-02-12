@@ -102,4 +102,13 @@ class bdd
         return $stmt;
     }
 
+    function listPatientDesktop()
+    {
+        $conn = $this->conn;
+
+        $stmt = $conn->prepare('SELECT * FROM sejour join utilisateur on (sejour.patient = utilisateur.id)');
+        $stmt->execute();
+        return $stmt;
+    }
+
 }
