@@ -77,9 +77,7 @@ if (isset($_POST['S\'inscrire'])) {
     </div>
 </form>
 
-<script>
-    document.getElementById("e-mail").value =
-</script>
+
 <?php
 if (!empty($_POST['e-mail'])){
     $_POST['e-mail'] = "";
