@@ -13,10 +13,12 @@ class configBDD
         try {
             $this->conn = new PDO("mysql:host=$hostname_BDD;dbname=$database_BDD", $username_BDD, $password_BDD);
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            return true;
 
         } catch (PDOException $e) {
             // Gérez les erreurs de connexion
             echo "Erreur : " . $e->getMessage();
+            return false;
         }
     }
 
@@ -126,7 +128,7 @@ class configBDD
     function medecin_id($nomP)
     {
         $conn = $this->conn;
-        $TabNom = explode(" ", $nomP);
+        $TabNom = explode(" . ", $nomP);
 
 
         $stmt = $conn->prepare("SELECT id FROM medecin WHERE nom = ? AND prenom = ?");
@@ -151,9 +153,10 @@ class configBDD
     {
         $conn = $this->conn;
 
-        $stmt = $conn->prepar("SELECT id FROM medecin WHERE matricule = ?");
-        $pass = $stmt->execute(array($matricule));
-        if ($pass){
+        $stmt = $conn->prepare("SELECT id FROM medecin WHERE matricule = ?");
+        $stmt->execute(array($matricule));
+        $pass = $stmt->fetch();
+        if (!$pass){
             $stmt = $conn->prepare("INSERT INTO medecin (nom,prenom,specialite,matricule) VALUES (?,?,?,?)");
             $stmt->bindParam(1,$nom);
             $stmt->bindParam(2,$prenom);
