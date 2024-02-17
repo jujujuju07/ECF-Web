@@ -7,7 +7,7 @@ if ($return){
     $patients = array();
     while ($row = $returne->fetch()){
         $patient = array();
-        $patient['id'] = $row['id'];
+        $patient['id'] = $row['0'];
         $patient['nom'] = $row['nom'];
         $patient['prenom'] = $row['prenom'];
         $patient['entre'] = $row['entre'];
