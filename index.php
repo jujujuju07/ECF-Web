@@ -13,7 +13,7 @@
     </div>
     <img src="image/lille.jpg" alt="image de lille" class="image">
     <div class="liste">
-        <label class="label-titre-liste">liste offre de soins</label>
+        <label class="label-titre-liste">offre de soins</label>
         <div class="liste-offre">
             <div class="liste-liste-offre-1">
                 <label class="label-liste">Chirurgie</label>
