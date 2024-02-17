@@ -95,7 +95,7 @@ if (isset($_POST['confirmation'])){
                     $list = $database->liste_medecin();
                     while ($row = $list->fetch()){
                         echo "<option>";
-                        echo $row['nom'] . " " . $row['prenom'];
+                        echo $row['nom'] . " . " . $row['prenom'];
                         echo "</option>";
                     }
                     ?>

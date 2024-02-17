@@ -102,4 +102,40 @@ class bdd
         return $stmt;
     }
 
+    function listPatientDesktop()
+    {
+        $conn = $this->conn;
+
+        $stmt = $conn->prepare('SELECT * FROM sejour join utilisateur on (sejour.patient = utilisateur.id) WHERE sortie = ? ORDER BY entre DESC , sortie ASC , date ASC');
+        $stmt->execute(array(0));
+        return $stmt;
+    }
+
+    function consultationSejour($id)
+    {
+        $conn = $this->conn;
+
+        $stmt = $conn->prepare('SELECT * FROM sejour WHERE id = ?');
+        $stmt->execute(array($id));
+        return $stmt;
+    }
+
+    function consultationMedecin($id)
+    {
+        $conn = $this->conn;
+
+        $stmt = $conn->prepare('SELECT * FROM medecin WHERE id = ?');
+        $stmt->execute(array($id));
+        return $stmt;
+    }
+
+    function modifierEntreSortie($id,$entre,$sortie)
+    {
+        $conn = $this->conn;
+
+        $stmt = $conn->prepare('UPDATE sejour SET entre = ? , sortie = ? WHERE id = ?');
+        $stmt->execute(array($entre,$sortie,$id));
+        return $stmt;
+
+    }
 }
