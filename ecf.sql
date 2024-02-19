@@ -37,11 +37,11 @@ CREATE TABLE `sejour` (
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
+  `password` varchar(60) NOT NULL,
   `id_user` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 INSERT INTO `user` (`id`, `email`, `password`, `id_user`) VALUES
-(1, 'admin@admin.com', '21232f297a57a5a743894a0e4a801fc3', NULL);
+(1, 'admin@admin.com', '$2y$10$WiLOkc40SuL7dVXebh5TYOeBQCb8kJIHviF.MJh6TxmC4wi4WVQn2', NULL);
 CREATE TABLE `utilisateur` (
   `id` int(11) NOT NULL,
   `nom` varchar(50) NOT NULL,
