@@ -41,7 +41,7 @@ class configBDD
         $utilisateur = $stmt->fetch();
 
         $stmt = $conn->prepare('INSERT INTO user (email,password,id_user) VALUES (?,?,?)');
-        $stmt->execute(array($email, md5($password), $utilisateur['id']));
+        $stmt->execute(array($email, password_hash($password,PASSWORD_BCRYPT), $utilisateur['id']));
         return 1;
 
     }
@@ -51,15 +51,20 @@ class configBDD
         session_start();
         $conn = $this->conn;
 
-        $stmt = $conn->prepare("SELECT id,id_user FROM user WHERE email = ? AND password = md5(?)");
-        $stmt->execute(array($email,$password));
+        $stmt = $conn->prepare("SELECT id,id_user,password FROM user WHERE email = ?");
+        $stmt->execute(array($email));
         $utilisateur = $stmt->fetch();
         if ($utilisateur){
-            if ($utilisateur['id_user'] == null){
-                return 2;
+            $passpass = password_verify($password,$utilisateur['password']);
+            if ($passpass){
+                if ($utilisateur['id_user'] == null){
+                    return 2;
+                }else{
+                    $_SESSION["id_user"] = $utilisateur["id_user"];
+                    return 1;
+                }
             }else{
-                $_SESSION["id_user"] = $utilisateur["id_user"];
-                return 1;
+                return 0;
             }
         }else{
             return 0;
